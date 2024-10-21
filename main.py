@@ -4,7 +4,7 @@ import subprocess
 
 import connectionDB
 
-folder_path = 'C:\\Users\\dlo_4\\Desktop\\Loader' #поставить папку, где хранятся файлы для загрузки
+folder_path = '' #поставить папку, где хранятся файлы для загрузки
 
 
 max_workers = 10
@@ -79,7 +79,7 @@ def count_active_workers(connection):
 
 
 def main():
-    connection = connectionDB.create_connection("flk", "progelmed", "progelmed", "192.168.0.149", "5432")
+    connection = connectionDB.create_connection("", "", "", "", "")
 
     while True:
         # Поиск файлов в статусе ожидания (loadstatus = 20)
