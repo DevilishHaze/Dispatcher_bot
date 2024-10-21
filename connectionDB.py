@@ -30,5 +30,5 @@ def execute_read_query(connection, query):
 
 if __name__ == "__main__":
     connection = create_connection(
-        "flk", "progelmed", "progelmed", "192.168.0.149", "5432"
+        "", "", "", "", ""
     )
